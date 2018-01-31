@@ -1,1 +1,2 @@
-# octo-vm
+# octothorpe-vm
+Final project react code
