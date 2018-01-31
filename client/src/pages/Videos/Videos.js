@@ -25,12 +25,12 @@ class Videos extends Component {
   loadVideos = () => {
     API.getVideos()
       .then(res =>
-        this.setState({ videos: res.data, 
-          videoId: " ", 
-          title: "", 
-          url: "", 
+        this.setState({ videos: res.data,
+          videoId: " ",
+          title: "",
+          url: "",
           description: "",
-          img: "", 
+          img: "",
         })
       )
       .catch(err => console.log(err));
@@ -90,16 +90,16 @@ class Videos extends Component {
         <Row>
           <Col size="md-8">
             <Jumbotron>
-              <h1>Video Player</h1>
+              <h1>Classroom Learning Video Player</h1>
             </Jumbotron>
             <Row>
           <Col size="md-12">
-            
+
               <h3>
-                {this.state.title} 
+                {this.state.title}
               </h3>
               <h4>
-              {this.state.description} 
+              {this.state.description}
               </h4>
           </Col>
         </Row>
@@ -117,12 +117,12 @@ class Videos extends Component {
         </Row>
        <Row>
         <div>
-          <p> </p> 
+          <p> </p>
           <p></p>
         </div>
-       </Row> 
+       </Row>
            {/*} <form>
-              
+
               <Input
                 value={this.state.title}
                 onChange={this.handleInputChange}
