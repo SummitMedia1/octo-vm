@@ -145,7 +145,7 @@ class Videos extends Component {
           </Col>
           <Col size="md-4 sm-12">
             <Jumbotron>
-              <h3>Learning & Activity Video Library</h3>
+              <h3>Bootcam Learning &<br />Activity Video Library</h3>
             </Jumbotron>
             {this.state.videos.length ? (
               <List>
