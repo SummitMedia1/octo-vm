@@ -22,7 +22,7 @@ mongoose.Promise = global.Promise;
 //   }
 // );
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://<dbuser>:<dbpassword>@ds221258.mlab.com:21258/heroku_40krdjn0",
+  process.env.MONGODB_URI || "mongodb://heroku_40krdjn0:panpV@ds221258.mlab.com:21258/heroku_40krdjn0",
   {
     useMongoClient: true
   }
