@@ -15,8 +15,14 @@ app.use(routes);
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
+// mongoose.connect(
+//   process.env.MONGODB_URI || "mongodb://localhost/panoptoVideos",
+//   {
+//     useMongoClient: true
+//   }
+// );
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/panoptoVideos",
+  process.env.MONGODB_URI || "mongodb://<dbuser>:<dbpassword>@ds221258.mlab.com:21258/heroku_40krdjn0",
   {
     useMongoClient: true
   }

@@ -8,7 +8,7 @@ import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import axios from 'axios';
-
+// import FacebookLogin from 'react-facebook-login';
 console.log("running client/src/pages/Home/Home.js");
 
 class Home extends Component {
@@ -23,7 +23,12 @@ class Home extends Component {
         img: ""
     };
   // When this component mounts, grab the book with the _id of this.props.match.params.id
+
+
+
     render() {
+
+
 
 const route = () => {
 
