@@ -8,7 +8,8 @@ import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
 import axios from 'axios';
-// import FacebookLogin from 'react-facebook-login';
+import FacebookLogin from 'react-facebook-login';
+
 console.log("running client/src/pages/Home/Home.js");
 
 class Home extends Component {
@@ -35,6 +36,32 @@ const route = () => {
     window.location = "/videos";
 
 };
+
+const responseFacebook = (response) => {
+
+
+    if(!this.state.redirectToReferrerF){
+    this.setState({redirectToReferrerF:false});
+
+  }
+this.setState({redirectToReferrerF:true});
+  if(this.state.redirectToReferrerF){
+    this.setState({redirectToReferrerF:false});
+    route();
+  }
+};
+const responseGoogle = (response) => {
+this.setState({redirectToReferrerG:true});
+
+  // console.log(response);
+
+  if(this.state.redirectToReferrerG){
+    this.setState({redirectToReferrerG:false});
+    route();
+  }
+
+};
+
 return (
       <Container fluid>
 
@@ -70,11 +97,16 @@ return (
                         <div className="modal-body">
                             <div className="row">
                                 <div className="text-center">
-                                    <h3>The University of Denver &<br />Trilogy Learning Video Archive</h3>
+                                    <h3>University of Denver & Trilogy Education Services<br />Boot Camp Video Archive</h3>
                                     <hr />
                                     <div className="col-md-2"></div>
 
                                     {/*<a href="http//localhost:3002/auth/google"  className="btn btn-facebook col-md-8">Login with <span className="fa fa-facebook-square"></span></a>*/}
+
+                                    <div className="col-md-8">
+                                      <div class="fb-login-button" data-width="200" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="true" data-use-continue-as="true"></div>
+                                    </div>
+
                                 </div>
                             </div>
                             <br />
