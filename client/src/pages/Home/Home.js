@@ -48,7 +48,7 @@ return (
 
                <div className="pull-right col-md-8">
 
-                <p className="lead" id="explanation-paragraph" style={{position: 'relative', zIndex: 20, paddingTop: '400px'}}>The University of Denver's Coding Bootcamp App powered by<br />Trilogy Education Services Boot Camp curriculum offers current<br />and past students an archive of all classroom learning videos,<br />cut down from the original source to the bare essential information<br />for each learning topic and solved activity.</p>
+                <p className="lead" id="explanation-paragraph" style={{position: 'relative', zIndex: 20, paddingTop: '400px'}}>The University of Denver's Coding Bootcamp App powered by<br />Trilogy Education Services coding curriculum offers current and<br />past students an archive of all classroom learning videos, cut<br />down from the original source to the bare essential information for each<br />learning topic and solved activity.</p>
                <br />
                 <p>Login now to view.</p>
                 <p className="lead" style={{position: 'relative', marginTop: '50px', zIndex: 19}}>
