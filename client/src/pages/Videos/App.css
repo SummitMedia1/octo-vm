@@ -2,9 +2,6 @@
   text-align: center;
 }
 
-.list-overflow-container{
-  max-height: 607px;
-}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 160px;
@@ -154,4 +151,36 @@ padding-top: 0px;
 .remove-btn:active{
   color: white;
   background-color: rgb(100, 100, 100);
+}
+
+.navBarHeight{
+  height: 130px;
+  background-color: #960730;
+  border-radius: 20px;
+}
+
+h3.navText{
+  clear: both;
+  color: #fff;
+  font-family: HelveticaNeue-CondensedBold;
+  font-weight: 600;
+  font-size: 31px;
+  letter-spacing: .35rem;
+  line-height: 4.0rem;
+  padding: 0;
+}
+
+.jumbotron {
+  background-color: #333;
+  color: #28c8e5;
+  height: 60px;
+  border-radius: 20px;
+}
+
+.jumbotron h1{
+  color: #28c8e5;
+  margin-top: 10px;
+  margin-left: 30px;
+  font-size: 24px;
+  letter-spacing: .35rem;
 }

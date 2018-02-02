@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import DeleteBtn from "../../components/DeleteBtn";
 import Jumbotron from "../../components/Jumbotron";
 import API from "../../utils/API";
+import Nav from "../../components/Nav";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../../components/Grid";
 import { List, ListItem } from "../../components/List";
 import { Input, TextArea, FormBtn } from "../../components/Form";
-
+import "./App.css";
 console.log("running client/src/pages/Videos/Videos.js");
 
 class Videos extends Component {
@@ -87,10 +88,11 @@ class Videos extends Component {
 
     return (
       <Container fluid>
+        <Nav />
         <Row>
           <Col size="md-8">
             <Jumbotron>
-              <h2>Classroom Learning Video Player</h2>
+              <h1>Classroom Learning Video Player</h1>
             </Jumbotron>
             <Row>
           <Col size="md-12">
@@ -145,7 +147,7 @@ class Videos extends Component {
           </Col>
           <Col size="md-4 sm-12">
             <Jumbotron>
-              <h3 align="center">Bootcamp Learning &<br />Activity Video Library</h3>
+              <h1 align="center">Bootcamp Learning &<br />Activity Video Library</h1>
             </Jumbotron>
             {this.state.videos.length ? (
               <List>

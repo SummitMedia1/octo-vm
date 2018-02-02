@@ -15,18 +15,18 @@ app.use(routes);
 // Set up promises with mongoose
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
-// mongoose.connect(
-//   process.env.MONGODB_URI || "mongodb://localhost/panoptoVideos",
-//   {
-//     useMongoClient: true
-//   }
-// );
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://heroku_40krdjn0:panpV@ds221258.mlab.com:21258/heroku_40krdjn0",
+  process.env.MONGODB_URI || "mongodb://localhost/panoptoVideos",
   {
     useMongoClient: true
   }
 );
+// mongoose.connect(
+//   process.env.MONGODB_URI || "mongodb://heroku_40krdjn0:panpV@ds221258.mlab.com:21258/heroku_40krdjn0",
+//   {
+//     useMongoClient: true
+//   }
+// );
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);

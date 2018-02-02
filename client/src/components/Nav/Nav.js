@@ -1,17 +1,18 @@
 import React from "react";
+import "../../pages/Videos/App.css"
 const Nav = () =>
-  <nav className="navbar navbar-inverse navbar-top">
-    <div className="container-fluid">
-      <div className="navbar-header text-center">
-        <button type="button" className="collapsed navbar-toggle">
+  <nav>
+    {/* <div className="container-fluid"> */}
+      <div className="container-fluid navBarHeight">
+        {/* <button type="button" className="collapsed navbar-toggle">
           <span className="sr-only">Toggle navigation</span>
           <span className="icon-bar" /> <span className="icon-bar" />
           <span className="icon-bar" />
-        </button>
-        <a href="/" className="navbar-brand">
-          The University of Denver & Trilogy Presents: Panopto Boot Camp Videos
-        </a>
+        </button> */}
+        <h3 align="center" className="navText">
+          University of Denver & Trilogy Education Services presents:<br />Panopto Classroom Learning Videos
+        </h3>
       </div>
-    </div>
+    {/* </div> */}
   </nav>;
 export default Nav;
